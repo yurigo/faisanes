@@ -1,0 +1,53 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('/img/pheasant.png') #020C17;
+    background-size: 1000% 1000%;
+
+}
+
+#pheasant{
+    position: fixed;
+    bottom:-400px;
+    left: 50%;
+    animation: updown 42s ease-in-out infinite;
+    
+}
+
+.sound-controls{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    height: 48px;
+    width: 48px;
+}
+
+.sound-controls img{
+    height: 48px;
+    width: 48px;
+}
+
+@keyframes updown{
+    0%{
+        bottom:-370px;
+        transform: perspective(1000px) translate3d(-50%, 0 , 0);
+        
+    }
+    50% {
+        transform: perspective(1000px) translate3d(-25%, -100px, 500px)
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        bottom:0;
+        opacity: 0;
+        transform:perspective(1000px) translate3d(9px, 141px, 999px)
+    }
+}
+
+
