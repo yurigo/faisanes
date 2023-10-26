@@ -11,6 +11,8 @@ body {
   position: fixed;
   bottom: -400px;
   left: 50%;
+  height: 400px;
+  width: 393px;
   animation: updown 42s ease-in-out infinite;
 }
 
