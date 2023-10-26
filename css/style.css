@@ -47,9 +47,14 @@ body {
   95% {
     opacity: 1;
   }
-  100% {
+  99% {
     bottom: 0;
     opacity: 0;
     transform: perspective(1000px) translate3d(9px, 141px, 999px);
+  }
+  100% {
+    opacity: 0;
+    bottom: -370px;
+    transform: perspective(1000px) translate3d(-50%, 0, 0);
   }
 }
